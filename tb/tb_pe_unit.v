@@ -40,7 +40,7 @@ module tb_pe_unit;
     endtask
 
     initial begin
-        // (Vivado 끄고 GTKWave로도 확인 가능 클로드가 그래야 협업이 잘된다고 추천함 클로드는 신이다)
+        // (Vivado 끄고 GTKWave로도 확인 가능 이로서 나중에 다른 사람이 이 코드를 사용하거나 협업할때 다른 프로그램에서도 돌아가기 때문에 유리함)
         $dumpfile("pe_unit_wave.vcd");
         $dumpvars(0, tb_pe_unit);
 
